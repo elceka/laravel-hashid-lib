@@ -16,9 +16,9 @@ trait Hashidable
     /**
      *
      */
-    public static function bootHashidable()
+    public function initializeHashidable()
     {
-        parent::append('hash_id');
+        $this->append('hash_id');
     }
 
     /**
